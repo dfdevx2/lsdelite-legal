@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LSD Elite — Política de Privacidade / Privacy Policy</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --card: #171a21;
+    --text: #e6e8ec;
+    --muted: #9aa2b1;
+    --accent: #7dd3a8;
+    --border: #262b35;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+  header {
+    margin-bottom: 32px;
+  }
+  h1 {
+    font-size: 1.6rem;
+    margin: 0 0 6px;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .lang-switch {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+  }
+  .lang-switch button {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .lang-switch button.active {
+    background: var(--accent);
+    color: #0f1115;
+    border-color: var(--accent);
+    font-weight: 600;
+  }
+  section.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+  h2 {
+    font-size: 1.05rem;
+    margin: 0 0 10px;
+    color: var(--accent);
+  }
+  p, li {
+    color: var(--text);
+    font-size: 0.96rem;
+  }
+  ul {
+    margin: 8px 0 0;
+    padding-left: 20px;
+  }
+  a { color: var(--accent); }
+  .lang-block { display: none; }
+  .lang-block.active { display: block; }
+  footer {
+    margin-top: 32px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>LSD Elite</h1>
+    <div class="updated">Política de Privacidade / Privacy Policy — Última atualização / Last updated: 28 de setembro de 2026</div>
+    <div class="lang-switch">
+      <button id="btn-pt" class="active" onclick="setLang('pt')">Português</button>
+      <button id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+  </header>
+
+  <!-- PORTUGUÊS -->
+  <div id="lang-pt" class="lang-block active">
+
+    <section class="card">
+      <h2>Resumo</h2>
+      <p>O LSD Elite é um aplicativo de inteligência artificial que roda <strong>inteiramente no seu
+      dispositivo</strong>. Não temos servidores, não coletamos dados, não usamos analytics e não
+      exibimos anúncios. As suas conversas, imagens geradas e tudo o que você digita ou fala para o
+      aplicativo permanecem apenas no seu aparelho, o tempo todo.</p>
+    </section>
+
+    <section class="card">
+      <h2>Quais dados coletamos</h2>
+      <p><strong>Nenhum.</strong> O LSD Elite não coleta, armazena em servidores, transmite ou
+      compartilha qualquer dado pessoal, conversa, imagem gerada, prompt de texto ou de voz. Não
+      existe conta de usuário, login, telemetria, rastreamento de uso ou identificador de
+      publicidade associado ao aplicativo.</p>
+    </section>
+
+    <section class="card">
+      <h2>Quando o aplicativo usa a internet</h2>
+      <p>A única situação em que o LSD Elite se conecta à internet é para <strong>baixar os modelos
+      de inteligência artificial</strong> que você escolher usar (modelos de texto/código e de
+      geração de imagem). Esse download é feito diretamente do seu dispositivo para os servidores
+      oficiais dos provedores desses modelos (Qualcomm AI Hub e/ou Hugging Face, conforme o modelo).
+      Nós não operamos nenhum servidor intermediário nesse processo e não temos acesso a essa
+      conexão nem a qualquer informação transmitida nela.</p>
+      <p>Depois de baixado, o modelo roda localmente no hardware do seu aparelho (NPU/GPU
+      Snapdragon), sem necessidade de internet.</p>
+    </section>
+
+    <section class="card">
+      <h2>Permissões do aplicativo</h2>
+      <ul>
+        <li><strong>Internet:</strong> exclusivamente para baixar os modelos de IA, como explicado acima.</li>
+        <li><strong>Microfone:</strong> usada apenas quando você ativa o Modo Live (conversa por
+        voz) ou grava um áudio para transcrever. O processamento de voz é feito pelos serviços de
+        reconhecimento de voz e síntese de fala do próprio sistema Android — o áudio não é enviado
+        para nós.</li>
+        <li><strong>Armazenamento:</strong> usada para guardar os arquivos dos modelos de IA
+        baixados e, opcionalmente, imagens geradas que você escolher salvar.</li>
+        <li><strong>Serviço em primeiro plano (foreground service):</strong> usada para manter a
+        geração de texto ou imagem em andamento quando o aplicativo está em segundo plano, evitando
+        que o sistema interrompa o processo no meio. Não envolve transmissão de dados.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Modelos de terceiros</h2>
+      <p>O LSD Elite utiliza modelos de inteligência artificial de terceiros (incluindo modelos
+      baseados em Llama, da Meta, e outros disponibilizados via Qualcomm AI Hub / Hugging Face),
+      cada um sujeito à sua própria licença. As licenças e atribuições completas de cada componente
+      de terceiros usado no aplicativo estão disponíveis dentro do próprio app, em
+      <strong>Ajustes → Licenças de terceiros</strong>.</p>
+    </section>
+
+    <section class="card">
+      <h2>Crianças</h2>
+      <p>O LSD Elite não é direcionado a crianças menores de 13 anos e não coletamos
+      intencionalmente dados de crianças, uma vez que não coletamos dados de nenhum usuário.</p>
+    </section>
+
+    <section class="card">
+      <h2>Alterações a esta política</h2>
+      <p>Podemos atualizar esta política de tempos em tempos, caso alguma funcionalidade do
+      aplicativo mude. A data da última atualização está sempre indicada no topo desta página.
+      Recomendamos revisar esta página periodicamente.</p>
+    </section>
+
+    <section class="card">
+      <h2>Contato</h2>
+      <p>Para dúvidas sobre esta política de privacidade, entre em contato:
+      <a href="mailto:viniciuseugenio47@gmail.com">viniciuseugenio47@gmail.com</a></p>
+    </section>
+
+  </div>
+
+  <!-- ENGLISH -->
+  <div id="lang-en" class="lang-block">
+
+    <section class="card">
+      <h2>Summary</h2>
+      <p>LSD Elite is an artificial intelligence app that runs <strong>entirely on your
+      device</strong>. We have no servers, we do not collect data, we do not use analytics, and we
+      do not show ads. Your conversations, generated images, and anything you type or say to the
+      app stay on your device at all times.</p>
+    </section>
+
+    <section class="card">
+      <h2>What data we collect</h2>
+      <p><strong>None.</strong> LSD Elite does not collect, store on any server, transmit, or share
+      any personal data, conversation, generated image, or text/voice prompt. There is no user
+      account, login, telemetry, usage tracking, or advertising identifier associated with the app.</p>
+    </section>
+
+    <section class="card">
+      <h2>When the app uses the internet</h2>
+      <p>The only situation in which LSD Elite connects to the internet is to <strong>download the
+      artificial intelligence models</strong> you choose to use (text/code models and image
+      generation models). This download happens directly from your device to the official servers
+      of those model providers (Qualcomm AI Hub and/or Hugging Face, depending on the model). We do
+      not operate any intermediary server in this process and have no access to that connection or
+      any information transmitted through it.</p>
+      <p>Once downloaded, the model runs locally on your device's hardware (Snapdragon NPU/GPU),
+      with no internet connection required.</p>
+    </section>
+
+    <section class="card">
+      <h2>App permissions</h2>
+      <ul>
+        <li><strong>Internet:</strong> exclusively to download AI models, as explained above.</li>
+        <li><strong>Microphone:</strong> used only when you activate Live Mode (voice conversation)
+        or record audio for transcription. Voice processing is handled by Android's own speech
+        recognition and text-to-speech services — audio is never sent to us.</li>
+        <li><strong>Storage:</strong> used to store downloaded AI model files and, optionally,
+        generated images you choose to save.</li>
+        <li><strong>Foreground service:</strong> used to keep text or image generation running while
+        the app is in the background, preventing the system from interrupting the process midway.
+        No data transmission is involved.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Third-party models</h2>
+      <p>LSD Elite uses third-party artificial intelligence models (including Llama-based models
+      from Meta, and others made available via Qualcomm AI Hub / Hugging Face), each subject to its
+      own license. Full licenses and attributions for every third-party component used in the app
+      are available inside the app itself, under <strong>Settings → Third-party licenses</strong>.</p>
+    </section>
+
+    <section class="card">
+      <h2>Children</h2>
+      <p>LSD Elite is not directed at children under 13, and we do not knowingly collect data from
+      children, since we do not collect data from any user.</p>
+    </section>
+
+    <section class="card">
+      <h2>Changes to this policy</h2>
+      <p>We may update this policy from time to time if the app's functionality changes. The last
+      updated date is always shown at the top of this page. We recommend reviewing it
+      periodically.</p>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>For questions about this privacy policy, contact:
+      <a href="mailto:viniciuseugenio47@gmail.com">viniciuseugenio47@gmail.com</a></p>
+    </section>
+
+  </div>
+
+  <footer>LSD Elite &middot; 2026</footer>
+</div>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('.lang-block').forEach(function(el) { el.classList.remove('active'); });
+  document.getElementById('lang-' + lang).classList.add('active');
+  document.getElementById('btn-pt').classList.toggle('active', lang === 'pt');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.documentElement.lang = lang;
+}
+</script>
+</body>
+</html>
